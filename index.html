@@ -22,9 +22,22 @@
 	</head>
 	<body>
 		<main>
+			<div class="footer">
+				<ul>
+					<li><a href="#" onclick="showCourses()">COURSES</a></li>
+					<li><a href="#" onclick="showActivity()">ACTIVITY</a></li>
+					<li><a href="#" onclick="showAccount()">ACCOUNT</a></li>
+				</ul>
+			</div>
+		<!--  -->
+			<div class="active">
+				<h2 id="active-title"></h2>
+				<ul id="active-list"></ul>
+			</div>
+		<!--  -->
 			<div class="user">
 				<img id="userImg" src="img/evan.jpg" alt="Evan Winston">
-				<h1 id="username"></h1>
+				<h1 id="username">Evan Winston</h1>
 				<h4 id="userId"></h4>
 			</div>
 		<!--  -->
@@ -36,19 +49,6 @@
 					<div id="prog-inner"></div>
 				</div>
 				<button>RESUME</button>
-			</div>
-		<!--  -->
-			<div class="active">
-				<h2 id="active-title"></h2>
-				<ul id="active-list"></ul>
-			</div>
-		<!--  -->
-			<div class="footer">
-				<ul>
-					<li><a href="#" onclick="showCourses()">COURSES</a></li>
-					<li><a href="#" onclick="showActivity()">ACTIVITY</a></li>
-					<li><a href="#" onclick="showAccount()">ACCOUNT</a></li>
-				</ul>
 			</div>
 		<!--  -->
 		</main>

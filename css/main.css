@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #BC8F8F;
+	background-color: #FA8072;
 	color: white;
 	font-family: 'PT Serif', serif;
 	margin: 0;
@@ -19,4 +19,129 @@ main > div {
 	margin: 1%;
 	vertical-align: top;
 	text-align: left;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 55px;
+	background-color: #8B0000;
+	text-align: center;
+}
+nav ul {
+	width: 55px;
+	padding: 0;
+	list-style-type: none;
+}
+ul {
+	margin: 0;
+}
+nav ul li {
+	color: white;
+	font-size: 1.5rem;
+	padding: 15px 0;
+}
+nav ul li:nth-child(1) {
+	background-color: #8B0000;
+}
+nav ul li i {
+	cursor: pointer;
+}
+nav ul li span {
+	opacity: 0;
+	position: absolute;
+	left: 65px;
+	white-space: pre;
+}
+nav.open {
+	width: 25vw;
+	text-align: left;
+}
+nav.open ul {
+	text-align: center;
+}
+nav.open ul li span {
+	opacity: 1;
+}
+.user {
+	padding: 50px;
+	width: 48%;
+	float: left;
+}
+.user img {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	box-shadow: -4px 6px 10px #CD5C5C;
+}
+#username {
+	padding-top: 20px;
+}
+.footer {
+	float: left;
+	width: 48%;
+	padding: 20px 0;
+}
+.footer ul {
+	list-style-type: none;
+}
+.footer ul li {
+	display: inline-block;
+	margin: 0 2%;
+}
+.footer ul li a {
+	color: white;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-shadow: 0 0 15px #FFF;
+}
+.stats {
+	width: 48%;
+	min-height: 300px;
+	padding: 50px;
+	float: right;
+}
+.stats button {
+	background: none;
+	border: 3px solid #CD5C5C;
+	color: #CD5C5C;
+	font-weight: bold;
+	font-size: 1.25rem;
+	border-radius: 30px;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	padding: 12px 30px;
+}
+.stats button:hover {
+	background-color: #CD5C5C;
+	color: white;
+}
+.stats #progress {
+	height: 70px;
+	width: 100%;
+	background-color: grey;
+	position: relative;
+}
+.stats #progress #prog-percent {
+	margin: 0;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.stats #progress #prog-inner {
+	height: 100%;
+	background-color: #CD5C5C;	
+}
+.active {
+	float: right;
+	width: 48%;
+	padding: 50px;
+}
+#time {
+	text-align: right;
 }
