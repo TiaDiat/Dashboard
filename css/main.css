@@ -1,1 +1,22 @@
-
+* {
+	transition: 0.5s ease;
+	box-sizing: border-box;
+}
+body {
+	background-color: #BC8F8F;
+	color: white;
+	font-family: 'PT Serif', serif;
+	margin: 0;
+}
+main {
+	text-align: center;
+	width: 100%;
+	padding: 30px 10vw;
+}
+main > div {
+	background-color:#800000;
+	box-shadow: -8px 12px 10px #A52A2A;
+	margin: 1%;
+	vertical-align: top;
+	text-align: left;
+}
